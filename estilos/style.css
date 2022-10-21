@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Font3';
+    src: url('../fonts/FUTRFW.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Font1';
+    src: url('../fonts/BrightnessInverted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: 'Font2';
+    src: url('../fonts/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background-image: url("../imagem/imagen.jpg");
+    font: normal 15pt Arial;
+}
+
+
+
+h1 {
+    font-family: 'Font1', Times, serif;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ce3f3f;
+}
+header {
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+    padding-right: 48px;
+}
+
+
+
+form {
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    
+    margin-top: 50px;
+    backdrop-filter: blur(-3px);
+    margin-right: 37%;
+    
+}
+
+
+/* div interação */
+#select {
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border: rgb(58, 56, 56);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.700);
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+#interacao {
+    margin-top: 10px;
+}
+#mensagem {
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border: rgb(58, 56, 56);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.700);
+}
+
+
+/* incremento */
+#incremento {
+    margin-top: 10px;
+    font-family: 'Font2', Times, serif;
+    color: #ce3f3f;
+}
+#incTxt {
+    font-size: 17px;
+    margin-right: 10px;
+}
+#inc {
+    background-color: rgb(58, 56, 56);
+    color: #ce3f3f;
+    border: rgb(58, 56, 56);
+    box-shadow: 3px 3px 10px rgba(94, 19, 0, 0.984);
+}
+
+
+/* tag select */
+#codfDecodf {
+    font-family: 'Font1', Times, serif;
+    font-size: 22px;
+    color: #818080;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 25px;
+    
+}
+
+
+/* caixa de resultado */
+#res {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border: rgb(58, 56, 56);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.700);
+}
+
+
+/* botao enviar */
+#bttenviar {
+    border-radius: 5px;
+    height: 30px;
+    border: 3px;
+    font-weight: bold;
+    font-family: 'Font2', Times, serif;
+    font-size: 20px;
+    background-color: #076307;
+    margin-top: 18px;
+    border: 2px solid black;
+}
+#bttenviar:hover{
+    width: 120px;
+    box-shadow: 3px 3px 10px rgb(56, 55, 55);
+    height: 40px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.800);
+}
+
+
+/* rodapé */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 200px;
+ }
+ 
+ #feito {
+    display: flex;
+    font-style: italic;
+    color: white;
+    font-size: 13px;
+    padding-right: 50px;
+    font-family: 'Font3', Times, serif;
+ }
+#git:hover{
+padding-right: 20px;
+ }
+ #linkedin{
+    padding: 10px;
+ }
+ #linkedin:hover {
+    padding: 20px;
+ }
+ #insta:hover {
+    padding-left: 20px;
+ }
+#insta {
+    margin-right: 150px;
+}
