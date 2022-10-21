@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Individual</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>Coder's</h1>
+    </header>
+    <!--Formulario-->
+    <form>
+        
+        <!--campo de texto-->
+        <div id="interacao">
+            <!--seleçao de escolha(base64 ou cifra de cesar)-->
+            <select id="select" name="select" onchange="esconderIncremento()">
+                <option id="selecione" value="selecione" selected disabled>Selecione</option>
+                <option id="ba64" value="b64">Base64</option>
+                <option id="cidc" value="cdc">Cifra de Cesar</option>
+            </select><br>
+            <textarea name="mensagem" id="mensagem" style="resize: none" cols="30" rows="3" placeholder="Digite seu texto"  required></textarea>
+            
+        </div>
+         <!--Incremento-->
+         <div id="incremento">
+            <label for="inc" id="incTxt" style="display: none">Incremento 1-26:</label>
+            <input type="number" id="inc" value="1" min="1" max="26" style="display: none">
+        </div>
+        <!--radio Codificar ou Decodificar-->
+        <div id="codfDecodf">
+            <input type="radio" name="radio" class="radio" id="txtcodf" oninput="mudancaButt()" checked>
+            <label for="txtcodf">Codificar</label>
+            <input type="radio" name="radio" class="radio" id="txtdecodf" oninput="mudancaButt()">
+            <label for="txtdecodf">Decodificar</label>
+        </div>
+        <!--Caixa de resultado-->
+        <div><textarea type="text" id="res" style="resize: none" cols="30" rows="3" placeholder="Resultado" readonly></textarea></div>
+        <!--botão enviar-->
+        <input type="submit" id="bttenviar" value="Codificar" onclick="alerta()"><br>
+    </form>
+    <footer>
+        <!-- Fotos do rodapé -->
+        <div>
+        <a href="https://github.com/thigsbomfim" id="git"><img src="imagem/github.png" alt="Foto logo github"></a>
+        <a href="https://www.linkedin.com/in/dev-thiago-bomfim/" id="linkedin"><img src="imagem/linkedin.png" alt="Foto logo linkedin"></a>
+        <a href="https://www.instagram.com/thi.bom/" id="insta"><img src="imagem/insta.png" alt="Foto logo insta"></a>
+    </div>
+        <div id="feito">
+            &copy; Feito por Thiago Bomfim
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+
+
